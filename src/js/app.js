@@ -81,6 +81,10 @@ App = {
     event.preventDefault();
 
     var petId = parseInt($(event.target).data('id'));
+    
+    // var petPrice = 0.1;
+    // var petPrice = web3.utils.toWei("0.01", "ether"); 
+    var petPrice = 100000000000000000;
 
     var adoptionInstance;
     web3.eth.getAccounts(function(error, accounts) {
@@ -91,7 +95,7 @@ App = {
       var account = accounts[0];
       App.contracts.Adoption.deployed().then(function(instance) {
         adoptionInstance = instance;
-        return adoptionInstance.adopt(petId, { from : account });
+        return adoptionInstance.adopt(petId, { from : account, value : petPrice });
       }).then(function(result) {
         return App.markAdopted();
       }).catch(function(err) {
