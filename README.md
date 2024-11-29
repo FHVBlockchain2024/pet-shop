@@ -19,3 +19,10 @@ Npm run dev.
 Follow the link.   
 If you didn´t add the meta mask extension, do it now.
 Allow your browser connecting your meta mask extension.  
+
+Select a dog you´d like then press adopt.
+The meta mask pop up now appears and ask´s you for the
+confirmation. 
+Read carefully and accept the contract. 
+Meta mask gives you in a separate pop up the information
+if the purchase was successfull. 
