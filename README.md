@@ -11,3 +11,8 @@ Truffle compile.
 Npm run dev.  
 Follow the link.   
 Allow your browser connecting your Meta Mask Extension.  
+
+## Bug
+There is a Bug if i modify a Solidity Class.
+Somehow the adopting process doesnt work anymore, except i completely delete the Class and create a new one.
+Cant add multiple contracts communicating with each other.
